@@ -1,0 +1,251 @@
+body{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    display: inline-grid;
+    background-image: url(../img/bg-cropped-final.jpg);
+    height: auto;
+    width: 100%;
+}
+.web-background{
+    background-color: rgba(255, 255, 255, 0.397);
+    width: 70%;
+    position: relative;
+    display: inline-grid;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 470px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: blueviolet;
+    position: sticky;
+    display: inline-block;
+    top: 0px;
+    z-index: 1100;
+}
+nav{
+    width: 70%;
+    display: inline-block;
+    padding: 15px;
+    position: absolute;
+}
+.logo-tamaño{
+    width: auto;
+    height: 60px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.logo-tamaño:hover{
+    transform: scale(1.2);
+}
+
+nav ul {
+    list-style-type:  none;
+    text-align: right;
+}
+nav ul li{
+    display: inline;
+    padding: 15px;
+    text-align: right;
+    
+}
+.menu-list{
+    color: rgb(255, 202, 58);
+    font-size: 20px;
+    text-decoration: none;    
+}
+
+.menu-list:hover{
+    color: aqua;
+}
+
+.main-background{
+    width: 100%;
+    background-image: url("../img/background-home.jpg");
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+/*TITULARES*/
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 160px;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 200;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    
+    
+}    
+h2{
+    color: blueviolet;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    font-size: 60px;
+}
+h2:hover{
+    transform: rotate3d(4, 4, 5, 5deg);
+    color: aqua; 
+}
+
+section h2{
+    text-align: center;
+}
+
+h3{
+    color: darkblue;
+    font-size: 20;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    
+}
+table{
+    width: 100%;
+    border: 2px solid darkmagenta;
+    box-shadow: 2px 2px darkorchid;
+    text-align: center;
+}
+.tabla{
+    padding-top: 60px;
+    margin-top: 30px;
+}
+input[type="text"], textarea{
+    border-color: lightseagreen;
+    border-radius: 4px;
+    width: 180px;
+}
+
+label{
+    font-weight: bold;
+    color: indigo;
+}
+
+th{
+    
+    color: deeppink;
+}
+th, td{
+    border: 0.5px solid indigo;
+}
+
+.destinos{
+    width: 100%;
+    height: auto;
+}
+.destinosPopulares{
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    position: relative;
+    margin: 14px;
+    padding-top: 50px;
+
+}
+.destinos h3{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.mexico{
+    background-image: url(../img/mexico.jpg);
+    transition: .5s ease;
+}
+.mexico:hover{
+    opacity: 0.7;
+}
+.amsterdam{
+    background-image: url(../img/amsterdang.jpg);
+}
+.amsterdam:hover{
+    opacity: 0.7;
+}
+.new-york{
+    background-image: url(../img/newyork.jpg);
+}
+.new-york:hover{
+    opacity: 0.7;
+}
+.republica-dominicana{
+    background-image: url(../img/republicadominicana.jpg);
+}
+.republica-dominicana:hover{
+    opacity: 0.7;
+}
+.tailandia{
+    background-image: url(../img/tailandia.jpg);
+}
+.tailandia:hover{
+    opacity: 0.7;
+}
+.japon{
+    background-image: url(../img/japon.jpg);
+}
+.japon:hover{
+    opacity: 0.7;
+}
+.mas-leidos{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+}
+.img-masleidos:hover {
+    opacity: 0.7;
+}
+.articulo{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    padding: 12px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+main img{
+    height: 100vh; 
+    width: auto;
+}
+.form-styles{
+    background-color: rgba(255, 255, 255, 0.432);
+    width: 100%;
+    height: auto;
+}
+form{
+    background-color: rgb(115, 163, 207);
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    margin: 14px;
+}
+
+.mapa{
+    display: inline-block;
+}
+
+.mapa img{
+    height: 350px;
+    
+}
+.footer-img{
+    height: 35px;
+    width: auto;
+    padding: 8px;
+    position: relative;
+    margin-top: 25px;
+    float: right;
+} 
+footer{
+    background: rgb(23,146,230);
+    background: linear-gradient(223deg, rgba(23,146,230,1) 0%, rgba(4,66,114,1) 50%, rgba(133,59,213,1) 100%);
+    width: 100%;    
+    height: 100px;
+}
