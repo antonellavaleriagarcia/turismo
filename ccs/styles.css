@@ -10,7 +10,6 @@ body{
     background:url(../img/bg-cropped-final.jpg) center center / cover no-repeat fixed;
 }
 .web-background{
-    background-color: rgba(255, 255, 255, 0.397);
     width: 70%;
     position: relative;
     display: inline-grid;
@@ -73,7 +72,7 @@ h1{
     font-family: 'Bebas Neue';
     text-align: center;
     vertical-align: middle;
-    font-weight: 200;
+    font-weight: lighter;
     margin-top: 150px;
     margin-bottom: 10px;
     
@@ -88,6 +87,11 @@ h2{
 h2:hover{
     transform: rotate3d(4, 4, 5, 5deg);
     color: aqua; 
+}
+h4{
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: #000000 3px 3px 5px;
 }
 
 section h2{
@@ -132,14 +136,15 @@ th, td{
 .destinos{
     width: 100%;
     height: auto;
+    background-color: rgba(255, 255, 255, 0.397);
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .destinosPopulares{
-    display: inline-block;
-    width: 30%;
     height: 150px;
-    position: relative;
     margin: 14px;
     padding-top: 50px;
+    
 
 }
 .destinos h3{
@@ -150,7 +155,6 @@ th, td{
 }
 .mexico{
     background-image: url(../img/mexico.jpg);
-    transition: .5s ease;
 }
 .mexico:hover{
     opacity: 0.7;
@@ -189,7 +193,13 @@ th, td{
 .card-img-top {
     max-height: 160px;
 }
-
+.mas-leidos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
 .img-masleidos:hover {
     opacity: 0.7;
 }
@@ -206,22 +216,10 @@ main img{
     height: 100vh; 
     width: auto;
 }
-.container.form-styles{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-}
+
 .form-syles{
     background-color: cornflowerblue;
 }
-
-.mapa{
-    display: inline-block;
-}
-
 
 
 .mapa img{
