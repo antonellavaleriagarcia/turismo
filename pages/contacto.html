@@ -4,59 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quienes somos</title>
-    <link rel="stylesheet" href="../ccs/styles.css">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../ccs/styles.css">
+    
 </head>
 <body>
     <header>
-        <img src="../img/logo.jpg" alt="Logo" class="logo-tamaño">
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="menu-list">Home</a></li>
-                <li><a href="destinos.html" class="menu-list">Destinos</a></li>
-                <li><a href="blog.html" class="menu-list">Blog</a></li>
-                <li><a href="quienes-somos.html" class="menu-list">Quienes somos</a></li>
-                <li><a href="#" class="menu-list">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="../img/logo.jpg" alt="Logo" class="logo-tamaño"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="destinos.html">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <div class="web-background">
-        <section class="form-styles">
-            <h2>Contacto</h2>
-            <form> 
-                <label for="nombre">Nombre</label> 
-                <br>
-                <input type="text" name="nombre">
-                <br>
-                <label for="apellido">Apellido</label> 
-                <br>
-                <input type="text" name="apellido">
-                <br>
-                <label for="mensaje">Mensaje</label> 
-                <br>
-                <textarea name="mensaje" ></textarea>
-                <br>
-                <br>
-                <select name="Genero" id="">
-                    <option value="Femenino">Femenino</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <br>
-                <br>
-                <label for="cliente">¿Eres cliente?</label>
-                <br>
-                <input type="checkbox" value="Si" name="cliente" id="">Si</input>
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Resetear">
-            </form>
-            <div class="mapa">
+        <h2>Contacto</h2>
+        <section class="container form-styles"> 
+            <div class="col-6">
+                <div class="mb-3"> 
+                    <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese nombre y apellido">
+                </div>
+                <div class="mb-3"> 
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ingrese su mensaje" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="col-6 mapa">
                 <img src="../img/mapa.jpg" alt="mapa">
             </div>
         </section>
@@ -71,5 +75,6 @@
     <br>
     &copy; Todos los derechos reservados
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

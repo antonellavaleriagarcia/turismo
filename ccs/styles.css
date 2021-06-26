@@ -5,9 +5,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     display: inline-grid;
-    background-image: url(../img/bg-cropped-final.jpg);
     height: auto;
     width: 100%;
+    background:url(../img/bg-cropped-final.jpg) center center / cover no-repeat fixed;
 }
 .web-background{
     background-color: rgba(255, 255, 255, 0.397);
@@ -17,6 +17,8 @@ body{
     margin-left: 15%;
     margin-right: 15%;
     min-height: 470px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 header{
@@ -28,12 +30,7 @@ header{
     top: 0px;
     z-index: 1100;
 }
-nav{
-    width: 70%;
-    display: inline-block;
-    padding: 15px;
-    position: absolute;
-}
+
 .logo-tamaño{
     width: auto;
     height: 60px;
@@ -45,32 +42,29 @@ nav{
     transform: scale(1.2);
 }
 
-nav ul {
-    list-style-type:  none;
-    text-align: right;
+
+.bg-light {
+    background-color: #8a2be2!important;
 }
-nav ul li{
-    display: inline;
-    padding: 15px;
-    text-align: right;
+
+div#navbarNav {
+    justify-content: flex-end;
+    color: rgb(255, 202, 58);
+    font-size: 20px;
     
+}
+li.nav-item {
+    margin-right: 2rem;!important
 }
 .menu-list{
     color: rgb(255, 202, 58);
     font-size: 20px;
     text-decoration: none;    
 }
-
-.menu-list:hover{
-    color: aqua;
-}
-
 .main-background{
     width: 100%;
-    background-image: url("../img/background-home.jpg");
     height: 100vh;
-    background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 /*TITULARES*/
 h1{
@@ -100,12 +94,11 @@ section h2{
     text-align: center;
 }
 
-h3{
+.mis-titulos{
     color: darkblue;
     font-size: 20;
     font-family: 'Bebas Neue';
     text-align: center;
-    
 }
 table{
     width: 100%;
@@ -192,12 +185,11 @@ th, td{
 .japon:hover{
     opacity: 0.7;
 }
-.mas-leidos{
-    width: 100%;
-    display: inline-block;
-    position: relative;
-    margin: 0px;
+
+.card-img-top {
+    max-height: 160px;
 }
+
 .img-masleidos:hover {
     opacity: 0.7;
 }
@@ -214,25 +206,27 @@ main img{
     height: 100vh; 
     width: auto;
 }
-.form-styles{
-    background-color: rgba(255, 255, 255, 0.432);
-    width: 100%;
-    height: auto;
+.container.form-styles{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
 }
-form{
-    background-color: rgb(115, 163, 207);
-    padding: 10px;
-    display: inline-block;
-    width: auto;
-    margin: 14px;
+.form-syles{
+    background-color: cornflowerblue;
 }
 
 .mapa{
     display: inline-block;
 }
 
+
+
 .mapa img{
-    height: 350px;
+    max-width: 95%;
+    float: right;
     
 }
 .footer-img{

@@ -5,31 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo</title>
-    <link rel="stylesheet" href="ccs/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="ccs/styles.css">
 </head>
 <body>
     <header>
-        <img src="img/logo.jpg" alt="Logo" class="logo-tamaño">
-        <nav>
-            <ul>
-                <li><a href="#" class="menu-list">Home</a></li>
-                <li><a href="pages/destinos.html" class="menu-list">Destinos</a></li>
-                <li><a href="pages/blog.html" class="menu-list">Blog</a></li>
-                <li><a href="pages/quienes-somos.html" class="menu-list">Quienes somos</a></li>
-                <li><a href="pages/contacto.html" class="menu-list">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="img/logo.jpg" alt="Logo" class="logo-tamaño"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/destinos.html">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/quienes-somos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
     </header>
-    <main class="main-background">
-        <h1 class=" animate__animated animate__fadeInDown">TURISMO</h1>
-        <h3>Conoce el lugar antes de llegar</h3>
-    </main>
-    <div class="web-background">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>First slide label</h3>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+            <img src="img/back-home-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>First slide label</h3>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+            <img src="img/back-home-2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>First slide label</h3>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+            <img src="img/back-home-3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>First slide label</h3>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+            <img src="img/back-home-4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="web-background container">
         <section class="destinos">
             <h2 class="titulo-destinos">Destinos populares</h2>
                 <div class="destinosPopulares amsterdam">
@@ -51,127 +111,39 @@
                     <h3>Japon</h3>
                 </div>
         </section>
-        <section class="mas-leidos ">
-                <h2 class="titulo-destinos">Mas leidos</h2>
-                <article class="articulo">
-                <img class="img-masleidos" src="img/castilloespaña.jpg" alt="Castillo" height="200px" width="auto">
-                <h3>Los castillos mas espectaculares de España</h3>
-                <p>Lorem Ipsum is sssimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </article>
-                <article class="articulo">
-                <img class="img-masleidos" src="img/comidachina.jpg" alt="ComidaChina" height="200px" width="auto">
-                <h3>Comidas tipicas chinas</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </article>
-            <article class="articulo">
-                <img class="img-masleidos" src="img/playaparadisiaca.jpg" alt="Playa" height="200px" width="auto">
-                <h3>10 playas paradisiacas mas visitadas</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </article>
-            <article class="tabla">
-                <h3>Países más visitados por turistas internacionales</h3>
-                <table>
-                    <tr>
-                        <th> 
-                            Posicion mundial
-                        </th>
-                        <th>
-                            Pais
-                        </th>
-                        <th>
-                            Region
-                        </th>
-                        <th>
-                            Numero turistas 2020
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            1
-                        </td>
-                        <td>
-                            Fracia
-                        </td>
-                        <td>
-                            Europa
-                        </td>
-                        <td>
-                            90,2 millones
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            España
-                        </td>
-                        <td>
-                            Europa
-                        </td>
-                        <td>
-                            85.8 millones
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            3
-                        </td>
-                        <td>
-                            Estados Unidos
-                        </td>
-                        <td>
-                            America
-                        </td>
-                        <td>
-                            79.6 millones
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            4
-                        </td>
-                        <td>
-                            China
-                        </td>
-                        <td>
-                            Asia
-                        </td>
-                        <td>
-                            62.9 millones
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            5
-                        </td>
-                        <td>
-                            Italia
-                        </td>
-                        <td>
-                            Europa
-                        </td>
-                        <td>
-                            62.1 millones
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            6
-                        </td>
-                        <td>
-                            Rusia
-                        </td>
-                        <td>
-                            Europa Asia
-                        </td>
-                        <td>
-                            26.8 millones
-                        </td>
-                    </tr>
-                </table>
-            </article>
-        </section>
+        <div class="container">
+            <h2>Más Leídos</h2>
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/nieve.jpg" class="card-img-top" alt="pirineos">
+                    <div class="card-body">
+                      <h5 class="card-title mis-titulos">Las 16 mejores experiencias en los Pirineos</h5>
+                      <p class="card-text">Parque Nacional de Ordesa y Monte Perdido Es el segundo parque nacional de Europa por antigüedad y uno de los lugares más deseados por los montañeros.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/bosque.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mis-titulos">Actividades al aire libre en Argentina</h5>
+                      <p class="card-text">Alpinismo, excursionismo y esquí han sido las actividades clásicas al aire libre en Argentina, pero hoy se practican muchas más: kitesurf en los Andes, parapente en las Sierras Centrales, submarinismo en la costa atlántica y pesca de truchas en la región de los lagos.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/paraiso.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title mis-titulos">Las Fiyi a fondo: experiencias auténticas e inolvidables</h5>
+                      <p class="card-text">Una inmersión en la cultura, naturaleza y estilo de vida de las Fiyi, un archipiélago de 330 islas en el Pacífico Sur que ofrece grandes y maravillosas experiencias.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <br>
+        </div>
         <br>
     </div>
 <footer>
@@ -183,5 +155,6 @@
     <br>
     &copy; Todos los derechos reservados
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
