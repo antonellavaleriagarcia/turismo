@@ -121,6 +121,11 @@ body{
             text-align: center;
             font-size: 30px;
             font-weight: lighter;
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+                font-weight: bolder;
+            }
         }
         
         .destinosPopulares{
@@ -223,6 +228,76 @@ body{
 .pag-mexico{
    h3{
        text-align: center;
-       color: red;
+       color: blueviolet;
+       margin-top: 20px;
+       margin-bottom: 20px;
+       font-weight: bolder;
    }
+}    
+.pag-new-york{
+    @extend .pag-mexico;
+}
+.pag-tailandia{
+    @extend .pag-mexico;
+}
+.pag-cuba{
+    @extend .pag-mexico;
+}
+.pag-japon{
+    @extend .pag-mexico;
+}
+.pag-amsterdam{
+    @extend .pag-mexico;
+}
+
+.div-mexico{
+    padding-left: 20px;
+    padding-right:20px;
+} 
+.div-new-york{
+    @extend .div-mexico;
+}
+.div-tailandia{
+    @extend .div-mexico;
+}
+.div-cuba{
+    @extend .div-mexico;
+}
+.div-japon{
+    @extend .div-mexico;
+}
+.div-amsterdam{
+    @extend .div-mexico;
+}
+
+.principal-mexico{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.principal-new-york{
+    @extend .principal-mexico;
+}
+.principal-tailandia{
+    @extend .principal-mexico;
+}
+.principal-cuba{
+    @extend .principal-mexico;
+}
+.principal-japon{
+    @extend .principal-mexico;
+}
+.principal-amsterdam{
+    @extend .principal-mexico;
+}
+@mixin textos($color, $tamanio) {
+    color: $color;
+    font-size: $tamanio;
+}
+.principal-japon{
+   @include textos(#333, 12px);
+}
+.principal-amsterdam{
+    @include textos(#00ff00, 16px)
 }

@@ -55,7 +55,7 @@ body {
     margin-top: 150px;
     margin-bottom: 10px; }
   body h2 {
-    color: #333;
+    color: blueviolet;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 60px; }
@@ -91,6 +91,10 @@ body {
       text-align: center;
       font-size: 30px;
       font-weight: lighter; }
+      body .destinos h3 a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: bolder; }
     body .destinos .destinosPopulares {
       height: 150px;
       margin: 14px;
@@ -155,6 +159,26 @@ body {
       margin-top: 25px;
       float: right; }
 
-.pag-mexico h3 {
+.pag-mexico h3, .pag-new-york h3, .pag-tailandia h3, .pag-cuba h3, .pag-japon h3, .pag-amsterdam h3 {
   text-align: center;
-  color: red; }
+  color: blueviolet;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder; }
+
+.div-mexico, .div-new-york, .div-tailandia, .div-cuba, .div-japon, .div-amsterdam {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.principal-mexico, .principal-new-york, .principal-tailandia, .principal-cuba, .principal-japon, .principal-amsterdam {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center; }
+
+.principal-japon {
+  color: #333;
+  font-size: 12px; }
+
+.principal-amsterdam {
+  color: #00ff00;
+  font-size: 16px; }
