@@ -23,7 +23,7 @@ body{
 
     header{
         width: 100%;
-        height: 80px;
+        height: auto;
         background-color: blueviolet;
         position: sticky;
         display: inline-block;
@@ -35,11 +35,26 @@ body{
         background-color: #8a2be2!important;
     }
     .logo-tamaño{
-            width: auto;
-            height: 60px;
-            display: inline-block;
-            padding: 10px;
+        width: auto;
+        height: 80px;
+        display: inline-block;
+        padding: 10px;
+        background:whitesmoke;
+        box-shadow: 6px 6px 47px -15px rgba(0,0,0,0.74);
+        -webkit-box-shadow: 6px 6px 47px -15px rgba(0,0,0,0.74);
+        -moz-box-shadow: 6px 6px 47px -15px rgba(0,0,0,0.74);
+        &:hover{
+            background-color: darkpink; 
         }
+    }
+    .main-logo{
+        position: absolute;
+        display: block;
+        height: 10px;
+        left: 50px;
+        padding-top: 0px;
+        top: 0;
+    }
     //ANIDACION
     .navbar {
         div#navbarNav{
@@ -119,7 +134,6 @@ body{
         h3{
             color: whitesmoke;
             text-align: center;
-            font-size: 30px;
             font-weight: lighter;
             a{
                 text-decoration: none;
@@ -232,6 +246,7 @@ body{
        margin-top: 20px;
        margin-bottom: 20px;
        font-weight: bolder;
+       font-size: 2.25rem;
    }
 }    
 .pag-new-york{
@@ -296,8 +311,24 @@ body{
     font-size: $tamanio;
 }
 .principal-japon{
-   @include textos(#333, 12px);
+   @include textos(#2e1963, 16px);
 }
 .principal-amsterdam{
-    @include textos(#00ff00, 16px)
+    @include textos(#2e1963, 16px)
+}
+.principal-cuba{
+    @include textos(#2e1963, 16px)
+}
+.principal-new-york{
+    @include textos(#2e1963, 16px)
+}
+.principal-tailandia{
+    @include textos(#2e1963, 16px)
+}
+.principal-mexico{
+    @include textos(#2e1963, 16px)
+}
+
+.logo-footer{
+    
 }
