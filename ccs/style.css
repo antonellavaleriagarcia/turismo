@@ -38,6 +38,9 @@ body {
     box-shadow: 6px 6px 47px -15px rgba(0, 0, 0, 0.74);
     -webkit-box-shadow: 6px 6px 47px -15px rgba(0, 0, 0, 0.74);
     -moz-box-shadow: 6px 6px 47px -15px rgba(0, 0, 0, 0.74); }
+    @media (max-width: 768px) {
+      body .logo-tamaño {
+        margin-left: 35%; } }
     body .logo-tamaño:hover {
       background-color: darkpink; }
   body .main-logo {
@@ -137,6 +140,8 @@ body {
       opacity: 0.7; }
   body .card-img-top {
     max-height: 160px; }
+  body .card {
+    height: 100%; }
   body .mas-leidos {
     margin-top: 50px;
     margin-bottom: 50px;

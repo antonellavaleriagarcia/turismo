@@ -43,6 +43,9 @@ body{
         box-shadow: 6px 6px 47px -15px rgba(0,0,0,0.74);
         -webkit-box-shadow: 6px 6px 47px -15px rgba(0,0,0,0.74);
         -moz-box-shadow: 6px 6px 47px -15px rgba(0,0,0,0.74);
+        @media(max-width:768px){
+            margin-left: 35%;
+        }
         &:hover{
             background-color: darkpink; 
         }
@@ -190,6 +193,9 @@ body{
 
     .card-img-top {
         max-height: 160px;
+    }
+    .card{
+        height: 100%;
     }
     .mas-leidos{
         margin-top: 50px;
