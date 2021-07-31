@@ -38,9 +38,6 @@ body {
     box-shadow: 6px 6px 47px -15px rgba(0, 0, 0, 0.74);
     -webkit-box-shadow: 6px 6px 47px -15px rgba(0, 0, 0, 0.74);
     -moz-box-shadow: 6px 6px 47px -15px rgba(0, 0, 0, 0.74); }
-    @media (max-width: 768px) {
-      body .logo-tamaño {
-        margin-left: 35%; } }
     body .logo-tamaño:hover {
       background-color: darkpink; }
   body .main-logo {
@@ -50,6 +47,9 @@ body {
     left: 50px;
     padding-top: 0px;
     top: 0; }
+    @media (max-width: 991px) {
+      body .main-logo {
+        left: 37%; } }
   body .navbar div#navbarNav {
     justify-content: flex-end;
     font-size: 20px; }
@@ -80,6 +80,7 @@ body {
     color: aqua; }
   body h4 {
     color: #FFFFFF;
+    background: blueviolet;
     font-weight: bold;
     text-shadow: #000000 3px 3px 5px; }
   body section h2 {
@@ -142,6 +143,10 @@ body {
     max-height: 160px; }
   body .card {
     height: 100%; }
+  body .tarjeta {
+    text-decoration: none; }
+  body .card-text {
+    color: black; }
   body .mas-leidos {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -169,7 +174,7 @@ body {
     width: 100%;
     height: 100px; }
     body footer .footer-img {
-      height: 35px;
+      height: 50px;
       width: auto;
       padding: 8px;
       position: relative;
@@ -216,3 +221,16 @@ body {
 .principal-mexico, .principal-new-york, .principal-tailandia, .principal-cuba, .principal-japon, .principal-amsterdam {
   color: #2e1963;
   font-size: 16px; }
+
+.logo-footer {
+  background: transparent;
+  box-shadow: unset;
+  width: auto;
+  height: 80px;
+  display: inline-block;
+  padding: 10px; }
+
+.copy {
+  color: white;
+  font-size: 10px;
+  text-align: center; }
