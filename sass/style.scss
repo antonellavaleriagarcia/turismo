@@ -11,14 +11,15 @@ body{
     width: 100%;
     background:url(../img/bg-cropped-final.jpg) center center / cover no-repeat fixed;
     .web-background{
-        width: 70%;
+        width: 80%;
         position: relative;
-        display: inline-grid;
-        margin-left: 15%;
-        margin-right: 15%;
+        display: inline-block;
+        margin-left: 10%;
+        margin-right: 10%;
         min-height: 470px;
         padding-top: 30px;
         padding-bottom: 30px;
+
     }
 
     header{
@@ -36,7 +37,7 @@ body{
     }
     .logo-tamaño{
         width: auto;
-        height: 80px;
+        height: 5rem;
         display: inline-block;
         padding: 10px;
         background:whitesmoke;
@@ -56,6 +57,9 @@ body{
         top: 0;
         @media(max-width:991px){
             left: 37%;
+        }
+        @media (max-width:500px) {
+            left: 25%;
         }
     }
     //ANIDACION
@@ -94,6 +98,10 @@ body{
         font-family: $title-font;
         text-align: center;
         font-size: 60px;
+        @media (max-width:500px){
+            font-size: 30px;
+        }
+
     }
     h2:hover{
         transform: rotate3d(4, 4, 5, 5deg);
@@ -205,10 +213,10 @@ body{
         color: black;
     }
     .mas-leidos{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding-bottom: 50px;
-        padding-top: 50px;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
         background-color: rgba(255, 255, 255, 0.4);
     }
 
@@ -243,7 +251,7 @@ body{
         width: 100%;    
         height: 100px;
         .footer-img{
-            height: 50px;
+            height: 40px;
             width: auto;
             padding: 8px;
             position: relative;
@@ -299,8 +307,6 @@ body{
 }
 
 .principal-mexico{
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
 }
 
@@ -346,7 +352,7 @@ body{
     background: transparent;
     box-shadow: unset;
     width: auto;
-    height: 80px;
+    height: 60px;
     display: inline-block;
     padding: 10px;
 }
@@ -354,5 +360,11 @@ body{
 .copy{
     color: white;
     font-size: 10px;
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
 }
+
+.img-vista{
+    max-width: 100%;
+}
+
